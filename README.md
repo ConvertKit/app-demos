@@ -1,2 +1,7 @@
-# plugin-demos
- Examples of ConvertKit plugins.
+# ConvertKit Editor Plugin Demos
+
+```
+cd html-renderer
+npm install
+npm run start
+```
