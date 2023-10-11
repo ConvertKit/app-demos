@@ -45,7 +45,7 @@ https://YOUR_URL/posts/html
 > Replace `YOUR_URL` with your server's URL.
 
 **Icon:**
-[The example icon from this directory](./example-icon.png)
+![The example icon from this directory](./example-icon.png)
 
 **Test mode:**
 Enabled
