@@ -12,7 +12,6 @@ app.use(express.json())
   { search: 'Default to generosity' }
 */
 app.post('/posts/search', (request, response) => {
-  console.log(request.body)
   // Access the user's search query with:
   console.log(request.body.search)
 
@@ -251,7 +250,6 @@ Example request:
 }
 */
 app.post('/posts/html', (request, response) => {
-  console.log(request.body)
   // Access the settings the user selected in ConvertKit's sidebar with:
   const settings = request.body.settings
 
