@@ -11,41 +11,47 @@ npm run start
 
 These endpoints assume that your block would be structured as follows on your [plugin dashboard](https://app.convertkit.com/editor/plugin_elements) (requires developer access).
 
-**Block name:**
-Post
+- **Block name:**
 
-**Description:**
-A demo plugin
+  Post
 
-**HTML URL:**
-https://YOUR_URL/posts/html
+- **Description:**
 
-> Replace `YOUR_URL` with your server's URL.
+  A demo plugin
 
-**Settings JSON:**
-```json
-[
-  {
-    "name": "postId",
-    "type": "search",
-    "label": "Post",
-    "placeholder": "Search for a post...",
-    "request_url": "https://YOUR_URL/posts/html/posts/search",
-    "required": true
-  },
-  {
-    "name": "favoriteColor",
-    "type": "color",
-    "label": "Favorite color",
-    "required": true
-  }
-]
-```
+- **HTML URL:**
 
-> Replace `YOUR_URL` with your server's URL.
+  https://YOUR_URL/posts/html
 
-**Icon:**
-![The example icon from this directory](./example-icon.png)
+  > Replace `YOUR_URL` with your server's URL.
 
-**Test mode:**
-Enabled
+- **Settings JSON:**
+
+  ```json
+  [
+    {
+      "name": "postId",
+      "type": "search",
+      "label": "Post",
+      "placeholder": "Search for a post...",
+      "request_url": "https://YOUR_URL/posts/html/posts/search",
+      "required": true
+    },
+    {
+      "name": "favoriteColor",
+      "type": "color",
+      "label": "Favorite color",
+      "required": true
+    }
+  ]
+  ```
+
+  > Replace `YOUR_URL` with your server's URL.
+
+- **Icon:**
+
+  ![The example icon from this directory](./example-icon.png)
+
+- **Test mode:**
+
+  Enabled
