@@ -9,7 +9,7 @@ npm install
 npm run start
 ```
 
-These endpoints assume that your block would be structured as follows on your [plugin dashboard](https://app.convertkit.com/editor/plugin_elements) (requires developer access).
+These endpoints assume that your block would be structured as follows on your [plugin dashboard](https://app.convertkit.com/account_settings/developer_settings)  ([requires developer access](https://convertkit.typeform.com/to/nsTUorqw)).
 
 - **Block name:**
 
