@@ -1,0 +1,16 @@
+{
+  "name": "oauth-express",
+  "version": "1.0.0",
+  "main": "index.js",
+  "engines": {
+    "node": ">=22.1.0"
+  },
+  "scripts": {
+    "start": "node --env-file .env index.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "passport": "^0.7.0",
+    "passport-oauth2": "^1.8.0"
+  }
+}
