@@ -1,14 +1,13 @@
 const { Strategy: OAuth2Strategy } = require("passport-oauth2");
 const { SCHEME, HOST, PORT } = require("./config");
 
-const KIT_SERVER = process.env.KIT_SERVER || "convertkit.com";
+const KIT_SERVER = process.env.KIT_SERVER || "kit.com";
 const KIT_OAUTH_CLIENT_ID = process.env.KIT_OAUTH_CLIENT_ID || "FILL ME IN";
 const KIT_OAUTH_CLIENT_SECRET =
   process.env.KIT_OAUTH_CLIENT_SECRET || "FILL ME IN";
 const KIT_OAUTH_AUTHORIZATION_URL = `https://app.${KIT_SERVER}/oauth/authorize`;
 const KIT_OAUTH_TOKEN_URL = `https://app.${KIT_SERVER}/oauth/token`;
 const KIT_OAUTH_CALLBACK_URL = `${SCHEME}://${HOST}:${PORT}/oauth/kit/callback`;
-const KIT_OAUTH_INSTALL_REDIRECT = `https://app.${KIT_SERVER}/apps?success=true`;
 
 OAuth2Strategy.prototype.userProfile = function (accessToken, done) {
   this._oauth2.get(
@@ -48,4 +47,3 @@ const KitOAuth = new OAuth2Strategy(
 console.log("Kit OAuth Configuration", oauthConfiguration);
 
 module.exports = KitOAuth;
-module.exports.KIT_OAUTH_INSTALL_REDIRECT = KIT_OAUTH_INSTALL_REDIRECT;
