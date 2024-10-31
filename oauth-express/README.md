@@ -34,13 +34,13 @@
         > node --env-file .env index.js
 
         Kit OAuth Configuration {
-          authorizationURL: 'https://app.convertkit.com/oauth/authorize',
-          tokenURL: 'https://app.convertkit.com/oauth/token',
+          authorizationURL: 'https://app.kit.com/oauth/authorize',
+          tokenURL: 'https://app.kit.com/oauth/token',
           clientID: '*******************************************',
           clientSecret: '*******************************************',
           callbackURL: 'https://localhost:8080/oauth/kit/callback'
         }
         Listening on :8080
 
-7. From here, clicking the "Install" button in the app directory will initiate the OAuth
-   flow by first going to your configured Authorization URL
+7. From here, clicking the "Install" button in the App Store will initiate the OAuth flow
+   by first going to your configured Authorization URL
